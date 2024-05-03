@@ -68,12 +68,14 @@ html.Hr(),
 html.Div([
     html.Div("Diagramme Circulaire"),
     dcc.Graph(figure={},id='pie-chart')
-], style={'textAlign': 'center', 'color': 'black', 'fontSize': 20})
+], style={'textAlign': 'center', 'color': 'black', 'fontSize': 20}),
+
+html.Hr(),
 
     ])
 
 
-
+#ok
 # Ajouter des contrôles pour créer l'interaction1-----------------------------------------------------------------
 #graphique 2
 @app.callback(
