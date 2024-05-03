@@ -32,7 +32,7 @@ app.layout = html.Div([
                     value='pop',
                     inline=True,#permet de mettre de façon horizontale mes boutons radio
                     id='my-radio-buttons-final')
-    ],style={'textAlign': 'center','background':'black'}),
+    ],style={'textAlign': 'center'}),
 
     #Diagramme en baton
     html.Div(className='row', children=[
@@ -42,7 +42,7 @@ app.layout = html.Div([
         html.Div(className='six columns', children=[
             dcc.Graph(figure={}, id='histo-chart-final')
         ])
-    ],style={'background':'black'}),
+    ]),
 
     #trait en dessous du titre
     html.Hr(),
@@ -70,7 +70,7 @@ html.Div([
     dcc.Graph(figure={},id='pie-chart')
 ], style={'textAlign': 'center', 'color': 'black', 'fontSize': 20})
 
-    ],style={'background':'black','width': '100%', 'height': '100%','margin': '0', 'padding': '0'})
+    ])
 
 
 
